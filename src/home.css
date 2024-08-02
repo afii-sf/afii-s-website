@@ -54,7 +54,8 @@ footer .container{
 }
 .breakpoint{
     height: 200px;
-    background: url("./src/images/breakpoint.jpeg");
+    /* background: url("./src/images/breakpoint.jpeg"); */
+    background: url("https://s3-alpha-sig.figma.com/img/b9d9/90c2/36b59b33968420633b664b348ba4a46e?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SM6VkpWVUb7N~g2KH8QDIWaUZa8oLwqdIGmcJacDuUiLrm85gzAdBivyiMMWWSIMShmvgh6eXBG9gd5cz9H4sEgi9uQw7bstfiNtoJHo~XZ3pxLV0yGxW51NJara1RptPb9I8EIsOruSq04BpNRJgQVWbj2GdLFPUaAPMgrxqB-QJH2wBiwexTI1JRRBL8RAKn9Ttb-PlZYmr7EgnsDWG9WWMtOImZ~XFJdTukdTg11pvufR05SeU~5~Q-G-z3I03v6twz0wDFZQVnV9QBzCJfJRNkduinAdVHDp9scBGd4pFDAWLbB6~uJCjLUEvjnIBz~9BGlygUX3N2dCWURTEQ__");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
