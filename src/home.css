@@ -1,0 +1,130 @@
+body{
+    background-color: #FFF4E0;
+} 
+footer a{
+    color: #3B4041;
+}
+footer .container{
+    width: 80%;
+}
+.intro {
+    height: fit-content;
+    width: 80%;
+}
+.intro .intro-text {
+    height: fit-content;
+    padding: 7% 0%;
+}
+.intro img{
+    height: fit-content;
+    width: 35%;
+    margin-right: 5%;
+}
+.intro .btn{
+    box-shadow: 1px 3px 2px rgba(0,0,0,0.5);
+}
+.steps img{
+    height: fit-content;
+    width: 10%;
+    float: left;
+}
+.steps p{
+    float: right;
+    width: 90%;
+    padding-left: 10px;
+}
+.description{
+    background-color: #27394D;
+    color: white;
+    padding: 7% 17%;
+}
+.support .container{
+    width: 80%;
+}
+.support .container .row .col-6 img{
+    width: 100%;
+}
+.support p{
+    padding: 7% 17%;
+}
+.support .btn{
+    width: 30%;
+    background-color: #C56A4B;
+    box-shadow: 1px 3px 2px rgba(0,0,0,0.5);
+}
+.breakpoint{
+    height: 200px;
+    background: url("./src/images/breakpoint.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+}
+.explain{
+    background-color: #FFE0B0;
+}
+.explain img {
+    width: 40%;
+}
+.explain2{
+    background-color: #E0E2DF;
+}
+.explain2 img {
+    width: 40%;
+}
+
+/* FAQs page design */
+.question h4{
+    width: 80%;
+}
+.question {
+    cursor: pointer;
+}
+.faq-wording{
+    width: 80%;
+}
+.faq-wording .btn{
+    width: 30%;
+    background-color: #C56A4B;
+}
+
+/* Find help page  */
+.shortcuts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* padding: 7% 17%; */
+
+}
+.shortcuts .service{
+    flex: 40%;
+    background-color: #FDF8F2;
+    height: fit-content;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+.shortcuts img{
+    width: 40%;
+}
+
+/* Service page  */
+.service {
+    background-color: #FDF8F2;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+}
+.service a{
+    width: 60%;
+    color: #255993;
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+/* .service img{
+    width: 10%;
+} */
+
