@@ -25,22 +25,22 @@ const Nav = () => {
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-center fs-5 flex-grow-1 pe-3">
                   <li class="nav-item mx-2">
-                    <Link class="nav-link active" aria-current="page" to={"/"} target="_top">HOME</Link>
+                    <Link class="nav-link active" aria-current="page" to={"/"} target="">HOME</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <Link class="nav-link" to={"/about"} target="_top">ABOUT US</Link>
+                    <Link class="nav-link" to={"/about"} target="">ABOUT US</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <Link class="nav-link" to={"/help"} target="_top">FIND HELP</Link>
+                    <Link class="nav-link" to={"/help"} target="">FIND HELP</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <Link class="nav-link" to={"/explain"} target="_top">HOW IT WORKS</Link>
+                    <Link class="nav-link" to={"/explain"} target="">HOW IT WORKS</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <Link class="nav-link" to={"/faq"} target="_top">FAQs</Link>
+                    <Link class="nav-link" to={"/faq"} target="">FAQs</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <Link class="nav-link" to={"/quizinfo"} target="_top">QUIZ</Link>
+                    <Link class="nav-link" to={"/quizinfo"} target="">QUIZ</Link>
                   </li>
                 </ul>
               </div>
