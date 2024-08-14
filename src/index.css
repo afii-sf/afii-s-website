@@ -67,7 +67,7 @@ nav {
 }
 .info img{
     width: 20%;
-    height: fit-content;
+    height: auto;
 }
 .info .rule {
     margin: auto;
@@ -145,7 +145,7 @@ nav {
 }
 .result-header img{
     width: 12%;
-    height: fit-content;
+    height: auto;
 }
 .result-header h4{
     margin-left: .7rem;

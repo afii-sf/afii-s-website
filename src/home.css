@@ -49,7 +49,7 @@ body{
     display: flex;
 }
 .steps img{
-    height: fit-content;
+    height: auto;
     width: 15%;
     margin-right: 1rem;
 }
@@ -79,7 +79,6 @@ body{
     /* padding: 7% 7%; */
     text-align: center;
     margin-top: 5%;
-    font-size: 1.5rem;
 }
 .support .btn{
     width: 50%;
@@ -108,7 +107,7 @@ body{
 }
 .explain img {
     width: 40%;
-    height: fit-content;
+    height: auto;
 }
 .explain2{
     background-color: #E0E2DF;
@@ -163,7 +162,7 @@ body{
 }
 .shortcuts img{
     border-radius:10px;
-    height: fit-content;
+    height: auto;
     width: 45%;
     /* position: absolute;
     bottom: 0;
@@ -187,7 +186,7 @@ body{
 }
 .service-header img{
     width: 30%;
-    height: fit-content;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -219,7 +218,7 @@ footer .container{
 }
 .info-header img{
     width: 30%;
-    height: fit-content;
+    height: auto;
     border-radius: 20px;
 }
 .info-header a{
@@ -348,9 +347,6 @@ footer .container{
     .intro .desktop{
         display: block;
     }
-    .tip{
-        /* height: 50vh; */
-    }
     .tip h2{
         font-size: 2rem;
         text-align: left;
@@ -379,6 +375,7 @@ footer .container{
         width: 70%;
         text-align: left;
         margin: auto;
+        font-size: calc(1.275rem + .3vw);
         /* margin-left: 10%; */
         /* font-size: 2rem; */
     }
