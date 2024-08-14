@@ -15,7 +15,7 @@ const Home = () => {
                         <Link to="/quiz" className="btn btn-lg fs-1 mt-2 desktop">Start Now</Link>
                     </div>
                     {/* <img src="./src/images/checklist.png" alt="img" className="float-end opacity-100 w-40 d-inline"></img>                */}
-                    <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/checklist.png?raw=true" alt="img" className="d-block"></img>               
+                    <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/checklist.png?raw=true" alt="img" className="d-block img-fluid"></img>               
                     <Link to="/quizinfo" className="btn btn-lg fs-1 mobile">Start Now</Link>
                  </div>
             </section>
