@@ -28,19 +28,19 @@ const Nav = () => {
                     <Link class="nav-link active" aria-current="page" to={"/"} target="">HOME</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="https://afii-eight.vercel.app/about" target="_top">ABOUT US</a>
+                    <a class="nav-link" href="https://afii-eight.vercel.app/about" target="">ABOUT US</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="https://afii-eight.vercel.app/help" target="_top">FIND HELP</a>
+                    <a class="nav-link" href="https://afii-eight.vercel.app/help" target="">FIND HELP</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="https://afii-eight.vercel.app/explain" target="_top">HOW IT WORKS</a>
+                    <a class="nav-link" href="https://afii-eight.vercel.app/explain" target="">HOW IT WORKS</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="https://afii-eight.vercel.app/faq" target="_top">FAQs</a>
+                    <a class="nav-link" href="https://afii-eight.vercel.app/faq" target="">FAQs</a>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="https://afii-eight.vercel.app/quizinfo" target="_top">QUIZ</a>
+                    <a class="nav-link" href="https://afii-eight.vercel.app/quizinfo" target="">QUIZ</a>
                   </li>
                 </ul>
               </div>
