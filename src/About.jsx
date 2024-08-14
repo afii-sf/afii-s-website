@@ -6,7 +6,7 @@ const About = () => {
     return (
         <>
             <Nav/>
-            <section className="w-100 d-flex flex-column justify-content-center align-items-center">
+            <section className="w-100 d-flex flex-column justify-content-center align-items-center" style={{minHeight:"100%"}}>
                 <div className="container p-4 about">
                     <h1 className="text-left">About Us</h1>
                     <p className="fs-5">We assist immigrants to settle in the Bay Area through a website that gathers information about various services from non-profit or government organizations. This way, newcomers can find exactly what they need, such as help and contacts specific to their situation, all in one place.</p>

@@ -4,7 +4,6 @@ body{
     font-weight: 300;
     font-style: normal;
     box-sizing: border-box;
-    overflow-x: hidden;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,7 +16,6 @@ body{
 }
 .intro .intro-text {
     height: fit-content;
-    /* margin-top: 15%; */
     color: #27394D;
     flex: 60%;
     text-align: center;
@@ -68,9 +66,6 @@ body{
     padding: 5% 7%;
 }
 
-.description p{
-    
-}
 .description a{
     color: white;
 }
@@ -411,9 +406,6 @@ footer .container{
         width: 45%;
         margin: 1rem;
         /* height: 40%; */
-    }
-    .shortcuts .service .link{
-        /* padding-top: 5%; */
     }
     .mobile{
         display: none;
