@@ -1,11 +1,13 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 import { Link } from "react-router-dom";
 import "./home.css";
 
 const Home = () => {
     return (
         <>
+            <ScrollToTop/>
             <Nav/>
             <section className="v-100 w-100 d-flex flex-coumn justify-content-cente align-items-cener">
                 <div className="container-lg intro d-flex align-items-center">

@@ -1,9 +1,11 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 import "./home.css";
 const Explain = () => {
     return (
         <>
+            <ScrollToTop/>
             <Nav/> 
             <h1 className="text-center p-5">How the Platform Works</h1>
             {/* <section className="d-flex flex-column justify-content-center "> */}

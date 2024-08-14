@@ -24,7 +24,7 @@ body{
     font-weight: bolder;
 }
 .intro img{
-    height: fit-content;
+    height: auto;
     width: 50%;
     margin: auto;
 }

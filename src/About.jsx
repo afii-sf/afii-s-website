@@ -1,10 +1,12 @@
 import "./home.css";
 import Nav from "./Nav";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 
 const About = () => {
     return (
         <>
+            <ScrollToTop/>
             <Nav/>
             <section className="w-100 d-flex flex-column justify-content-center align-items-center" style={{minHeight:"100%"}}>
                 <div className="container p-4 about">

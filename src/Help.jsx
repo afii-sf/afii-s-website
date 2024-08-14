@@ -1,5 +1,6 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 import Select from 'react-select';
 import { Link } from "react-router-dom";
 import { names } from "./Data";
@@ -31,6 +32,7 @@ const Help = () => {
 
     return (
         <>
+        <ScrollToTop />
         <Nav />
         <h1 className="text-center p-3"> Search For Organizations.</h1>
         <p className="text-center"> You may be eligible to receive help from more organizations. <br/> Check it out through our database.</p>

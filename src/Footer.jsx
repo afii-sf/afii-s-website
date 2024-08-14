@@ -7,16 +7,16 @@ const Footer = () => {
             <div className="container">
                 <div className="row d-flex align-items-center justify-content-center">
                     <div className="col-sm-6">
-                        {/* <Link to={"/about"} className="" ><h4>About Us</h4></Link> */}
-                        <a href="/about" className="" ><h4>About Us</h4></a>
-                        {/* <Link to={"/explain"} className="p-3"><h4>How It Works</h4></Link> */}
-                        <a href="/explain" className="p-3"><h4>How It Works</h4></a>
+                        <Link to={"/about"} className="" ><h4>About Us</h4></Link>
+                        {/* <a href="/about" className="" ><h4>About Us</h4></a> */}
+                        <Link to={"/explain"} className="p-3"><h4>How It Works</h4></Link>
+                        {/* <a href="/explain" className="p-3"><h4>How It Works</h4></a> */}
                     </div>
                     <div className="col-sm-6">
-                        {/* <Link to={"/help"} className="text-md-end"><h4>Find Help</h4></Link> */}
-                        <a href="/explain" className="text-md-end"><h4>Find Help</h4></a>
-                        {/* <Link to={"/faq"} className="p-3 text-md-end"><h4>FAQs</h4></Link> */}
-                        <a href="/faq" className="p-3 text-md-end"><h4>FAQs</h4></a>
+                        <Link to={"/help"} className="text-md-end"><h4>Find Help</h4></Link>
+                        {/* <a href="/explain" className="text-md-end"><h4>Find Help</h4></a> */}
+                        <Link to={"/faq"} className="p-3 text-md-end"><h4>FAQs</h4></Link>
+                        {/* <a href="/faq" className="p-3 text-md-end"><h4>FAQs</h4></a> */}
                     </div>
                 </div>
                 <div className="col-sm-6 text-center p-3 socials fs-6 m-auto">

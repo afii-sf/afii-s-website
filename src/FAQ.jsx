@@ -1,5 +1,6 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 import { useState } from "react";
 import "./home.css";
 
@@ -34,6 +35,7 @@ const FAQ = () => {
 
     return (
         <>
+            <ScrollToTop/>
             <Nav/>
             <h1 className="text-center p-3">Frequently Asked Questions</h1>
             <p className="text-center p-3">Help us improve. Email at contact.afii.sf@gmail.com for any suggestions or concerns.</p>

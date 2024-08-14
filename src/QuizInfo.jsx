@@ -1,5 +1,6 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 import { Link } from "react-router-dom";
 import "./index.css";
 
@@ -7,6 +8,7 @@ import "./index.css";
 const QuizInfo = () => {
     return (
         <div style={{backgroundColor:"#E1EFFF", height:"max-content"}} className="quizInfo">
+            <ScrollToTop />
             <Nav />
                 <section className="w-100 d-flex flex-column justify-content-center align-items-center p-2 info">
                     <div className="container">
