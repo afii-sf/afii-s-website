@@ -7,12 +7,12 @@ const Footer = () => {
             <div className="container">
                 <div className="row d-flex align-items-center justify-content-center">
                     <div className="col-sm-6">
-                        <a className="" href="https://afii-eight.vercel.app/about" target="_top"><h4>About Us</h4></a>
-                        <a className="p-3" href="https://afii-eight.vercel.app/explain" target="_top"><h4>How It Works</h4></a>
+                        <Link to={"/about"} className="" ><h4>About Us</h4></Link>
+                        <Link to={"/explain"} className="p-3"><h4>How It Works</h4></Link>
                     </div>
                     <div className="col-sm-6">
-                        <a href="https://afii-eight.vercel.app/help" className="text-md-end" target="_top"><h4>Find Help</h4></a>
-                        <a href="https://afii-eight.vercel.app/faq" className="p-3 text-md-end" target="_top"><h4>FAQs</h4></a>
+                        <Link to={"/help"} className="text-md-end"><h4>Find Help</h4></Link>
+                        <Link to={"/faq"} className="p-3 text-md-end"><h4>FAQs</h4></Link>
                     </div>
                 </div>
                 <div className="col-sm-6 text-center p-3 socials fs-6 m-auto">

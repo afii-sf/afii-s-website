@@ -25,22 +25,22 @@ const Nav = () => {
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-center fs-5 flex-grow-1 pe-3">
                   <li class="nav-item mx-2">
-                    <Link class="nav-link active" aria-current="page" to={"/"} target="">HOME</Link>
+                    <Link class="nav-link active" aria-current="page" to={"/"}>HOME</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="https://afii-eight.vercel.app/about" target="">ABOUT US</a>
+                    <Link class="nav-link" to={"/about"} >ABOUT US</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="https://afii-eight.vercel.app/help" target="">FIND HELP</a>
+                    <Link class="nav-link" to={"/help"}>FIND HELP</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="https://afii-eight.vercel.app/explain" target="">HOW IT WORKS</a>
+                    <Link class="nav-link" to={"/explain"}>HOW IT WORKS</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="https://afii-eight.vercel.app/faq" target="">FAQs</a>
+                    <Link class="nav-link" to={"/faq"}>FAQs</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="https://afii-eight.vercel.app/quizinfo" target="">QUIZ</a>
+                    <Link class="nav-link" to={"/quizinfo"}>QUIZ</Link>
                   </li>
                 </ul>
               </div>
