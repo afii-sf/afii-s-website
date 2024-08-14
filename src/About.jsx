@@ -16,7 +16,7 @@ const About = () => {
                     <p className="fs-5">Besides taking a quiz, anyone can access our organization's database. It allows users to easily navigate and access information on legal assistance, education, community engagement, and many other services provided by organizations in the Bay Area.</p>
                 </div>
             </section>
-            <section className="w-100 vh-50 d-flex flex-column justify-content-center align-items-center breakpoint"></section>
+            <section className="w-100 d-flex flex-column justify-content-center align-items-center breakpoint"></section>
             <section className="w-100 vh-50 d-flex flex-column justify-content-center align-items-center">
                 <div className="container p-4">
                     <h4>Mission and Vision</h4>

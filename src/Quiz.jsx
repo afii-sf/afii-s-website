@@ -1,4 +1,5 @@
 import Nav from "./Nav";
+import Footer from "./Footer";
 import Select from 'react-select'
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -136,7 +137,7 @@ const Quiz = () => {
             name: "age"
         },
         {
-            question: "Are you seeking help as a family",
+            question: "Are you seeking help as a family?",
             type: "binary",
             options: familyOptions,
             name: "family"
@@ -174,7 +175,7 @@ const Quiz = () => {
     ]
 
     return(
-        <div>
+        <div style={{backgroundColor:"#E1EFFF"}}>
             <Nav /> 
             <main>
                 <section className="w-100 vh-100 d-flex flex-column justify-content-center align-items-center">
@@ -213,21 +214,30 @@ const Quiz = () => {
                     </div>
                 </div>
                 <div className="navigation my-5">
-                    <button className="btn back px-3" onClick={handlePrev}>Back</button>
+                    {/* <button className="btn back px-3" onClick={handlePrev}>Back</button> */}
+                    <button className="btn back px-3" onClick={handlePrev} disabled={questionIndex === 0}>Back</button>
                     <button className="btn btn-warning mx-2 px-3 skip" onClick={handleNext}>Skip</button>
-                    {lastQuestion ? <Link to={`/result?data=${encodedData}`}><button className="btn btn-warning mx-2 px-5 next">Submit</button></Link>
-                     : <button className="btn btn-warning mx-2 px-5 next" onClick={handleNext}>Next</button>}
+                    {lastQuestion ? (
+                        <Link to={`/result?data=${encodedData}`}><button className="btn btn-warning mx-2 px-5 next">Submit</button></Link>
+                    ) : (
+                        <button 
+                        className="btn btn-warning mx-2 px-5 next" 
+                        onClick={handleNext} 
+                        disabled={
+                            !data[questions[questionIndex].name] || 
+                            data[questions[questionIndex].name].length === 0} 
+                        >
+                        Next
+                        </button>
+                        )}
                     {/* <button className="btn btn-warning mx-2 px-5 next" onClick={handleNext}>{lastQuestion ? "Submit" : "Next"}</button> */}
                 </div>
                 </section>
             </main>
+            <Footer/>
         </div>
     )
 };
 
 export default Quiz;
 
-// encodeURIComponent(data.age)}&language=${encodeURIComponent(data.language)}&priority=${encodeURIComponent(data.priority)
-// questions[questionIndex].options.map((option, index) => (
-//     {/* <button key={index} className="btn answer btn-lg mx-2 py-4 px-5 mt-3" value={option}>{option}</button> */}
-// ))

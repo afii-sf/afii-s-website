@@ -36,12 +36,12 @@ const FAQ = () => {
         <>
             <Nav/>
             <h1 className="text-center p-3">Frequently Asked Questions</h1>
-            <p className="text-center p-3">Help us improve. Email at contact.afii.sf@gmail.com for any suggestions or concerns</p>
+            <p className="text-center p-3">Help us improve. Email at contact.afii.sf@gmail.com for any suggestions or concerns.</p>
             <section className="w-100 d-flex flex-column justify-content-center align-items-center faq" style={{backgroundColor:"#FFF4E0"}}>
                 <div className="container">
                     {questions.map((question, index) => (
                         <div className="question py-2" key={index}>
-                            <div className="question-header d-flex flex-row justify-content-between align-items-center" onClick={() => handleClick(index)}>
+                            <div className="question-header d-flex flex-row justify-content-between align-items-center pt-2" onClick={() => handleClick(index)}>
                                 <h4>{question.question}</h4>
                                 <i className={`fas fa-2x d-block fa-chevron-down fa-${collapse === index ? "rotate-180" : ""}`}></i>
                             </div>
@@ -52,9 +52,9 @@ const FAQ = () => {
                         </div>
                     ))}
                 </div>
-                <div className="container d-flex flex-row align-items-center justify-content-between faq-wording p-5">
-                    <h4>Help us in our mission<br/>Bring uncertainty into opportunity!</h4>
-                    <a href="https://www.gofundme.com" className="btn btn-lg btn-warning d-block fs-3" target="_blank">Donate</a>
+                <div className="container d-flex flex-row align-items-center justify-content-between faq-wording p-3">
+                    <h4 className="fs-5 py-2">Help us in our mission.<br/>Bring uncertainty into opportunity!</h4>
+                    <a href="https://www.gofundme.com/f/start-a-nonprofit-organization-to-assist-immigrants" className="btn btn-lg btn-warning d-block" target="_blank">Donate</a>
                 </div>
             </section>
             <Footer/>

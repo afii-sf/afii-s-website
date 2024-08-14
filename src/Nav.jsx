@@ -3,10 +3,10 @@ import "./index.css";
 
 const Nav = () => {
     return (
-        <nav class="navbar bg-body-warning navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg">
           <div class="container">
             {/* logo  */}
-            <Link class="navbar-brand fs-4" to={"/"}>AFII</Link>
+            <Link class="navbar-brand fs-6" to={"/"} style={{color:"#C56A4B"}}><img src="https://s3-alpha-sig.figma.com/img/e76d/7a48/2f82f69a077e4d874a9a3ee021263566?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a~lgdB3ejQvpTLB3d3-7DT4BooQEpcEr8VvM13hGxwXM2ISeb5X77uv8c-KBSgfMQXpRqSYXB1uMwmTVos4igrORmJ7U6eQD3DIXnRsuuvOVb5wcXHHzyrkxzgLh5MlmCJlbUhaHpj11rLm3H7xcY2MTEbHaxYvQDqOBeksy~fR0vh3n0MV9~B50mGI4JhhfXqQyheYAitdPhugOlC9JMTsLVfJSsoKeFzOthS35iCzTYgPPBppYNvHqUY0w4rZzA-HkqqRk42Kv3zRMiQt-nNpBCAcSqzf0GL7nRZJDjfWJjzFxhF3nuYsYVaM3L70ug5k-4E9yA9r9Y57XkzHQGQ__" alt="AFII" width="30" height="24"></img>afii.us</Link>
             {/* toggle button */}
             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -16,29 +16,31 @@ const Nav = () => {
             <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
               {/* sidebar header  */}
               <div class="offcanvas-header border-bottom">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AFII</h5>
+                <img src="https://s3-alpha-sig.figma.com/img/e76d/7a48/2f82f69a077e4d874a9a3ee021263566?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a~lgdB3ejQvpTLB3d3-7DT4BooQEpcEr8VvM13hGxwXM2ISeb5X77uv8c-KBSgfMQXpRqSYXB1uMwmTVos4igrORmJ7U6eQD3DIXnRsuuvOVb5wcXHHzyrkxzgLh5MlmCJlbUhaHpj11rLm3H7xcY2MTEbHaxYvQDqOBeksy~fR0vh3n0MV9~B50mGI4JhhfXqQyheYAitdPhugOlC9JMTsLVfJSsoKeFzOthS35iCzTYgPPBppYNvHqUY0w4rZzA-HkqqRk42Kv3zRMiQt-nNpBCAcSqzf0GL7nRZJDjfWJjzFxhF3nuYsYVaM3L70ug5k-4E9yA9r9Y57XkzHQGQ__" alt="AFII" width="30" height="24" class="offcanvas-title" id="offcanvasNavbarLabel"></img>
+                <span>afii.us</span>
+                {/* <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AFII</h5> */}
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               {/* sidebar body  */}
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-center fs-5 flex-grow-1 pe-3">
                   <li class="nav-item mx-2">
-                    <Link class="nav-link active" aria-current="page" to={"/"}>Home</Link>
+                    <Link class="nav-link active" aria-current="page" to={"/"} target="_top">HOME</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <Link class="nav-link" to={"/about"}>ABOUT US</Link>
+                    <Link class="nav-link" to={"/about"} target="_top">ABOUT US</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <Link class="nav-link" to={"/help"}>FIND HELP</Link>
+                    <Link class="nav-link" to={"/help"} target="_top">FIND HELP</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <Link class="nav-link" to={"/explain"}>HOW IT WORKS</Link>
+                    <Link class="nav-link" to={"/explain"} target="_top">HOW IT WORKS</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <Link class="nav-link" to={"/faq"}>FAQs</Link>
+                    <Link class="nav-link" to={"/faq"} target="_top">FAQs</Link>
                   </li>
                   <li class="nav-item mx-2">
-                    <Link class="nav-link" to={"/quizinfo"}>Quiz</Link>
+                    <Link class="nav-link" to={"/quizinfo"} target="_top">QUIZ</Link>
                   </li>
                 </ul>
               </div>

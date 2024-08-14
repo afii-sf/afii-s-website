@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { createClient } from '@supabase/supabase-js';
 import { useState, useEffect } from "react";
 import Nav from "./Nav";
+import Footer from "./Footer";
 import "./index.css";
 const Result = ({ result }) => {
     const supabaseUrl = 'https://jhuoubjorzswmuenkqvc.supabase.co'
@@ -65,10 +66,9 @@ const Result = ({ result }) => {
 
 
     return (
-        <>
+        <div style={{backgroundColor:"#E1EFFF", height:"100%"}}>
             <Nav />
-            <main>
-                <section className="w-100 vh-100 d-flex flex-column align-items-center">
+                <section className="w-100 d-flex flex-column align-items-center">
                     <h1 className="mt-5" style={{color:"#C56A4B", textAlign:"center"}}>Congratulations! You have completed the quiz</h1>
                     <h2 className="text-center">Here are resources we think might help you</h2>
                     <h1 className="mt-5" style={{color:"#FFC154"}}>Local Organizations</h1>
@@ -77,9 +77,9 @@ const Result = ({ result }) => {
                             const isExpanded = expandedIndexes.includes(index);
                             const content = isExpanded ? item.overview : item.overview.substring(0, 100) + '...';
                             return(
-                                <div key={index} className="result bg-warning test-row-block">
-                                    <div className="d-flex ustify-content-between">
-                                        {/* <img src={item.logo} alt={item.name} style={{width:"15%"}} /> */}
+                                <div key={index} className="result test-row-block mb-3">
+                                    <div className="d-flex align-items-center result-header mb-md-2">
+                                        <img src={item.logo} alt={item.name}  />
                                         <h4>{item.name}</h4>
                                     </div>
                                     <p className="p-1">{content} <span className="text-primary" onClick={() => toggleExpand(index)}> {isExpanded ? "Show Less" : "Read More"} </span></p>
@@ -99,8 +99,8 @@ const Result = ({ result }) => {
                             )})}
                         </div>
                 </section>
-            </main>
-        </>
+            <Footer />
+        </div>
     );
 }
 

@@ -7,6 +7,7 @@ import QuizInfo from './QuizInfo';
 import Quiz from './Quiz';
 import Explain from './Expain';
 import Service from './Service';
+import Info from './Info';
 import FAQ from './FAQ';
 import './index.css';
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/explain" element={<Explain />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/service" element={<Service />} />
+          <Route path="/info" element={<Info />} />
       </Routes>
   )
 };
