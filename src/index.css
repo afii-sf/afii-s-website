@@ -68,7 +68,7 @@ nav {
 }
 .info img{
     width: 20%;
-    height: fit-content;
+    display: block;
 }
 .info .rule {
     margin: auto;
