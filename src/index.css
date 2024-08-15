@@ -115,6 +115,24 @@ nav {
     width: 90%;
     margin: auto;
 }
+.question-container {
+    display: flex;
+    align-items: center;
+  }
+  
+.question-text {
+  display: inline-block;
+  margin: auto;
+}
+
+.info-icon {
+  display: inline-block;
+  font-size: 0.8em;
+  color: #FFC154; 
+  margin-left: 0.5rem; 
+  cursor: pointer;
+}
+  
 /* .input {
     margin: auto;
     width: 40%;
@@ -139,11 +157,13 @@ nav {
 .result{
     border-radius: 10px;
     box-shadow: 1px 3px 2px rgba(0,0,0,0.5);
-    /* height: fit-content; */
 }
 .result p{
     border-radius: 10px;
     background-color: #E8AF4A;
+}
+.result p .text-primary{
+    cursor: pointer;
 }
 .result-header img{
     width: 12%;
@@ -151,6 +171,11 @@ nav {
 }
 .result-header h4{
     margin-left: .7rem;
+}
+.expand .btn{
+    background-color: #7996B6;
+    border-radius: 10px;
+    box-shadow: 1px 3px 2px rgba(0,0,0,0.5);
 }
 .test-row{
     display: flex;
@@ -189,12 +214,20 @@ nav {
   .test-row-block{
       width: 100%;
   }
+  .expand h5{
+        width: 70%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
     .quizInfo{
         height: max-content;
+    }
+    .info img{
+        width: 10%;
+        display: block;
+        height: 20%;
     }
 }
 @media only screen and (min-width: 1024px){
