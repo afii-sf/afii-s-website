@@ -65,32 +65,28 @@ const Help = () => {
                 <div className="service d-flex flex-column justify-content-between pe-2">
                     <Link to={`/service?service=legal`} className="text-center p-2 mt-2 link">Legal Services</Link>
                     <div className="d-flex flex-row align-items-end justify-content-end">
-                        {/* <img src="./src/images/legal.png"></img> */}
-                        <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/legal.png?raw=true"></img>
+                        <img src="/static/images/legal.png"></img>
                         <p className="fs-5 text-center m-auto ps-2">Seeking for a lawyer's advice or help with documentation?</p>
                     </div>
                 </div>
                 <div className="service d-flex flex-column justify-content-between my-3 pe-2">
                     <Link to={`/service?service=emergency`} className="text-center p-2 link">Emergency Assistance</Link>
                     <div className="d-flex flex-row align-items-end justify-content-end">
-                        {/* <img src="./src/images/emergency.png"></img> */}
-                        <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/emergency.png?raw=true"></img>
+                        <img src="/static/images/emergency.png"></img>
                         <p className="fs-5 text-center m-auto ps-2">Need emergency housing, food resources or medical help?</p>
                     </div>
                 </div>
                 <div className="service d-flex flex-column justify-content-between pe-2">
                     <Link to={`/service?service=family`} className="text-center p-2 link">Family Support</Link>
                     <div className="d-flex flex-row align-items-end">
-                        {/* <img src="./src/images/family.png"></img> */}
-                        <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/family.png?raw=true"></img>
+                        <img src="/static/images/family.png"></img>
                         <p className="fs-5 text-center m-auto ps-2">Seeking assistance and support as a family?</p>
                     </div>
                 </div>
                 <div className="service my-3 d-flex flex-column justify-content-between pe-2">
                     <Link to={`/service?service=employment`} className="text-center p-3 link">Employment Training and Education</Link>
                     <div className="d-flex flex-row align-items-end">
-                        {/* <img src="./src/images/employment.png"></img> */}
-                        <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/employment.png?raw=true"></img>
+                        <img src="/static/images/employment.png"></img>
                         <p className="fs-5 text-center m-auto ps-2">Wish to receive quality education and qualification to secure a job</p>
                     </div>
                 </div>

@@ -90,8 +90,7 @@ body{
 }
 .breakpoint{
     height: 100px;
-    /* background: url("./src/images/breakpoint.jpeg"); */
-    background: url("https://github.com/Ekene-Azubuko/afii/blob/main/src/images/breakpoint.jpeg?raw=true");
+    background: url("/static/images/breakpoint.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
