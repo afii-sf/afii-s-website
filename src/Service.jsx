@@ -22,19 +22,19 @@ const Service = () => {
     switch(queryParams.get('service')) {
         case 'legal':
             var service = 'Legal Services';
-            var pic = "https://github.com/Ekene-Azubuko/afii/blob/main/src/images/legal.png?raw=true"
+            var pic = "/static/images/legal.png"
             break;
         case 'emergency':
             var service = 'Emergency Services';
-            var pic = "https://github.com/Ekene-Azubuko/afii/blob/main/src/images/emergency.png?raw=true"
+            var pic = "/static/images/emergency.png"
             break;
         case 'family':
             var service = 'Family';
-            var pic = "https://github.com/Ekene-Azubuko/afii/blob/main/src/images/family.png?raw=true"
+            var pic = "/static/images/family.png"
             break;
         case 'employment':
             var service = 'Employment Training/Counseling';
-            var pic = "https://github.com/Ekene-Azubuko/afii/blob/main/src/images/employment.png?raw=true"
+            var pic = "/static/images/employment.png"
             break;
         default:
             var service = 'Legal Services';
