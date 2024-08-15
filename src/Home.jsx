@@ -16,7 +16,7 @@ const Home = () => {
                         <p className="mt-3 py-2">Our platform creates a personalized list of immigrant resources that are suitable specifically for YOUR case, based on just a couple of quiz answers!<br/>Let's find out how AFII can help you!</p>
                         <Link to="/quiz" className="btn btn-lg fs-1 mt-2 desktop">Start Now</Link>
                     </div>
-                    <img src="src\images\checklist.png" alt="img" className="d-block img-fluid"></img>               
+                    <img src="/static/images/checklist.png" alt="img" className="d-block img-fluid"></img>               
                     {/* <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/checklist.png?raw=true" alt="img" className="d-block img-fluid"></img>                */}
                     <Link to="/quizinfo" className="btn btn-lg fs-1 mobile">Start Now</Link>
                  </div>
