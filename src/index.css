@@ -8,6 +8,12 @@ body{
     /* background-color: #E1EFFF; */
     background-size: cover;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+footer{
+    margin-top: auto;
 }
 label{
     display: block;

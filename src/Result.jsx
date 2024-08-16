@@ -6,8 +6,8 @@ import Nav from "./Nav";
 import Footer from "./Footer";
 import "./index.css";
 const Result = ({ result }) => {
-    const supabaseUrl = 'https://jhuoubjorzswmuenkqvc.supabase.co'
-    const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpodW91Ympvcnpzd211ZW5rcXZjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjAwNTUxNzcsImV4cCI6MjAzNTYzMTE3N30.GJSXRMxFzTD5-5v7ksGPHAphXUX5F2Z0TV5UwajjaI8"
+    const supabaseUrl = 'https://jhuoubjorzswmuenkqvc.supabase.co';
+    const supabaseKey = import.meta.env.VITE_APIKEY;
     const supabase = createClient(supabaseUrl, supabaseKey);
     const [dbData, setDbData] = useState([]);
     const [expandedIndexes, setExpandedIndexes] = useState([]);

@@ -193,10 +193,10 @@ body{
 /* footer styles  */
 footer{
     margin-top: auto;
-    bottom: 0;
-    /* position: absolute; */
+    /* bottom: 0;
+    position: sticky;
     left: 0;
-    right: 0;
+    right: 0; */
 }
 footer a{
     color: #3B4041;
@@ -416,5 +416,11 @@ footer .container{
     }
     .service-header img{
         width: 20%;
+    }
+    .info-header img{
+        width: 10%;
+    }
+    .info-header p{
+        font-size: 1.3rem;
     }
 }
