@@ -3,7 +3,11 @@ import "./home.css";
 
 const Footer = () => {
     return (
+<<<<<<< HEAD
         <footer className="w-100 d-flex flex-column justify-content-center align-items-center text-light footer" style={{backgroundColor:"#FFC154"}}>
+=======
+        <footer className="w-100 d-flex flex-column justify-content-center align-items-center text-light footer mt-auto" style={{backgroundColor:"#FFC154"}}>
+>>>>>>> upstream/main
             <div className="container">
                 <div className="row d-flex align-items-center justify-content-center">
                     <div className="col-sm-6">

@@ -90,8 +90,12 @@ body{
 }
 .breakpoint{
     height: 100px;
+<<<<<<< HEAD
     /* background: url("./src/images/breakpoint.jpeg"); */
     background: url("https://github.com/Ekene-Azubuko/afii/blob/main/src/images/breakpoint.jpeg?raw=true");
+=======
+    background: url("/static/images/breakpoint.jpeg");
+>>>>>>> upstream/main
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -194,10 +198,17 @@ body{
 /* footer styles  */
 footer{
     margin-top: auto;
+<<<<<<< HEAD
     bottom: 0;
     /* position: absolute; */
     left: 0;
     right: 0;
+=======
+    /* bottom: 0;
+    position: sticky;
+    left: 0;
+    right: 0; */
+>>>>>>> upstream/main
 }
 footer a{
     color: #3B4041;
@@ -418,4 +429,13 @@ footer .container{
     .service-header img{
         width: 20%;
     }
+<<<<<<< HEAD
+=======
+    .info-header img{
+        width: 10%;
+    }
+    .info-header p{
+        font-size: 1.3rem;
+    }
+>>>>>>> upstream/main
 }

@@ -1,14 +1,28 @@
+<<<<<<< HEAD
 import { useLocation } from "react-router-dom";
 import { createClient } from '@supabase/supabase-js';
 import { useState, useEffect } from "react";
+=======
+import { Link, useLocation } from "react-router-dom";
+import { createClient } from '@supabase/supabase-js';
+import { useState, useEffect } from "react";
+import { defaultOrg } from "./Data";
+>>>>>>> upstream/main
 import Nav from "./Nav";
 import Footer from "./Footer";
 import "./index.css";
 const Result = ({ result }) => {
+<<<<<<< HEAD
     const supabaseUrl = 'https://jhuoubjorzswmuenkqvc.supabase.co'
     const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpodW91Ympvcnpzd211ZW5rcXZjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjAwNTUxNzcsImV4cCI6MjAzNTYzMTE3N30.GJSXRMxFzTD5-5v7ksGPHAphXUX5F2Z0TV5UwajjaI8"
     const supabase = createClient(supabaseUrl, supabaseKey);
     const [dbData, setDbData] = useState(null);
+=======
+    const supabaseUrl = 'https://jhuoubjorzswmuenkqvc.supabase.co';
+    const supabaseKey = import.meta.env.VITE_APIKEY;
+    const supabase = createClient(supabaseUrl, supabaseKey);
+    const [dbData, setDbData] = useState([]);
+>>>>>>> upstream/main
     const [expandedIndexes, setExpandedIndexes] = useState([]);
 
     const toggleExpand = (index) => {
@@ -70,10 +84,17 @@ const Result = ({ result }) => {
             <Nav />
                 <section className="w-100 d-flex flex-column align-items-center">
                     <h1 className="mt-5" style={{color:"#C56A4B", textAlign:"center"}}>Congratulations! You have completed the quiz</h1>
+<<<<<<< HEAD
                     <h2 className="text-center">Here are resources we think might help you</h2>
                     <h1 className="mt-5" style={{color:"#FFC154"}}>Local Organizations</h1>
                         <div className="justify-content-center container test-row mt-1">
                             {dbData && dbData.map((item, index) => {
+=======
+                    <h2 className="text-center px-2">{dbData.length > 0 ? "Here are resources we think might help you" : "Unfortunately, we have no organization that matches your need but check out the ones below."}</h2>
+                    <h1 className="mt-5" style={{color:"#FFC154"}}>Local Organizations</h1>
+                        <div className="justify-content-center container test-row mt-1">
+                            {dbData.length > 0 ? dbData.map((item, index) => {
+>>>>>>> upstream/main
                             const isExpanded = expandedIndexes.includes(index);
                             const content = isExpanded ? item.overview : item.overview.substring(0, 100) + '...';
                             return(
@@ -96,9 +117,52 @@ const Result = ({ result }) => {
                                         </div>
                                     }
                                 </div>
+<<<<<<< HEAD
                             )})}
                         </div>
                 </section>
+=======
+                            )}) 
+                                :  
+                            defaultOrg.map((item, index) => {
+                                const isExpanded = expandedIndexes.includes(index);
+                                const content = isExpanded ? item.overview : item.overview.substring(0, 100) + '...';
+                                return(
+                                    <div key={index} className="result test-row-block mb-3">
+                                        <div className="d-flex align-items-center result-header mb-md-2">
+                                            <img src={item.logo} alt={item.name}  />
+                                            <h4>{item.name}</h4>
+                                        </div>
+                                        <p className="p-1">{content} <span className="text-primary" onClick={() => toggleExpand(index)}> {isExpanded ? "Show Less" : "Read More"} </span></p>
+                                        {item.phone_number && 
+                                            <div>
+                                                <i className="fa-solid fa-phone d-block mt-1">&nbsp;&nbsp;</i>
+                                                {item.phone_number[0]}
+                                            </div>
+                                            }
+                                        {item.link && 
+                                            <div>
+                                                <i class="fa-solid fa-globe d-block mt-1">&nbsp;&nbsp;</i>
+                                                <a href={item.link} style={{color:"black"}} target="_blank">Visit Website</a>
+                                            </div>
+                                        }
+                                        <div>
+                                            <i class="fa-solid fa-circle-info d-block mt-1">&nbsp;&nbsp;</i>
+                                            <Link to={`/info?name=${item.name}`} style={{color:"black"}}>More info</Link>
+                                        </div>
+                                    </div>
+                                )
+                            }
+                            )}
+                        </div>
+                </section>
+                <section className="w-100 d-flex  flex-wrap p-5 p-md-3 expand" style={{backgroundColor:"#ABC7E6", height:"100%"}}>
+                    <div className="container d-flex flex-wrap align-items-center justify-content-md-center">
+                        <h5 className="pt-md-2">Didn't find what you were looking for? Expand the search.</h5>
+                        <Link to={"/help"} className="btn fs-4 ms-md-3">Click Here</Link>
+                    </div>
+                </section>
+>>>>>>> upstream/main
             <Footer />
         </div>
     );

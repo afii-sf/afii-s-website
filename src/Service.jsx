@@ -7,7 +7,11 @@ import "./home.css";
 
 const Service = () => {
     const supabaseUrl = 'https://jhuoubjorzswmuenkqvc.supabase.co'
+<<<<<<< HEAD
     const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpodW91Ympvcnpzd211ZW5rcXZjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjAwNTUxNzcsImV4cCI6MjAzNTYzMTE3N30.GJSXRMxFzTD5-5v7ksGPHAphXUX5F2Z0TV5UwajjaI8"
+=======
+    const supabaseKey = import.meta.env.VITE_APIKEY;
+>>>>>>> upstream/main
     const supabase = createClient(supabaseUrl, supabaseKey);
     const [dbData, setDbData] = useState(null);
     const [currentPage, setCurrentPage] = useState(1);
@@ -22,6 +26,7 @@ const Service = () => {
     switch(queryParams.get('service')) {
         case 'legal':
             var service = 'Legal Services';
+<<<<<<< HEAD
             var pic = "https://github.com/Ekene-Azubuko/afii/blob/main/src/images/legal.png?raw=true"
             break;
         case 'emergency':
@@ -35,6 +40,21 @@ const Service = () => {
         case 'employment':
             var service = 'Employment Training/Counseling';
             var pic = "https://github.com/Ekene-Azubuko/afii/blob/main/src/images/employment.png?raw=true"
+=======
+            var pic = "/static/images/legal.png"
+            break;
+        case 'emergency':
+            var service = 'Emergency Services';
+            var pic = "/static/images/emergency.png"
+            break;
+        case 'family':
+            var service = 'Family';
+            var pic = "/static/images/family.png"
+            break;
+        case 'employment':
+            var service = 'Employment Training/Counseling';
+            var pic = "/static/images/employment.png"
+>>>>>>> upstream/main
             break;
         default:
             var service = 'Legal Services';

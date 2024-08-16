@@ -8,6 +8,15 @@ body{
     /* background-color: #E1EFFF; */
     background-size: cover;
     overflow-x: hidden;
+<<<<<<< HEAD
+=======
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+footer{
+    margin-top: auto;
+>>>>>>> upstream/main
 }
 label{
     display: block;
@@ -115,6 +124,27 @@ nav {
     width: 90%;
     margin: auto;
 }
+<<<<<<< HEAD
+=======
+.question-container {
+    display: flex;
+    align-items: center;
+  }
+  
+.question-text {
+  display: inline-block;
+  margin: auto;
+}
+
+.info-icon {
+  display: inline-block;
+  font-size: 0.8em;
+  color: #FFC154; 
+  margin-left: 0.5rem; 
+  cursor: pointer;
+}
+  
+>>>>>>> upstream/main
 /* .input {
     margin: auto;
     width: 40%;
@@ -139,12 +169,21 @@ nav {
 .result{
     border-radius: 10px;
     box-shadow: 1px 3px 2px rgba(0,0,0,0.5);
+<<<<<<< HEAD
     /* height: fit-content; */
+=======
+>>>>>>> upstream/main
 }
 .result p{
     border-radius: 10px;
     background-color: #E8AF4A;
 }
+<<<<<<< HEAD
+=======
+.result p .text-primary{
+    cursor: pointer;
+}
+>>>>>>> upstream/main
 .result-header img{
     width: 12%;
     height: auto;
@@ -152,6 +191,14 @@ nav {
 .result-header h4{
     margin-left: .7rem;
 }
+<<<<<<< HEAD
+=======
+.expand .btn{
+    background-color: #7996B6;
+    border-radius: 10px;
+    box-shadow: 1px 3px 2px rgba(0,0,0,0.5);
+}
+>>>>>>> upstream/main
 .test-row{
     display: flex;
     flex-wrap: wrap;
@@ -189,6 +236,12 @@ nav {
   .test-row-block{
       width: 100%;
   }
+<<<<<<< HEAD
+=======
+  .expand h5{
+        width: 70%;
+  }
+>>>>>>> upstream/main
 }
 
 @media only screen and (min-width: 768px) {
@@ -196,6 +249,14 @@ nav {
     .quizInfo{
         height: max-content;
     }
+<<<<<<< HEAD
+=======
+    .info img{
+        width: 10%;
+        display: block;
+        height: 20%;
+    }
+>>>>>>> upstream/main
 }
 @media only screen and (min-width: 1024px){
     /* For desktop: */

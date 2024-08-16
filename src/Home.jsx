@@ -14,10 +14,17 @@ const Home = () => {
                     <div className="d-block intro-text fs-3">
                         <h1 className="">Get your immigration support in one quiz.</h1>
                         <p className="mt-3 py-2">Our platform creates a personalized list of immigrant resources that are suitable specifically for YOUR case, based on just a couple of quiz answers!<br/>Let's find out how AFII can help you!</p>
+<<<<<<< HEAD
                         <Link to="/quiz" className="btn btn-lg fs-1 mt-2 desktop">Start Now</Link>
                     </div>
                     {/* <img src="./src/images/checklist.png" alt="img" className="float-end opacity-100 w-40 d-inline"></img>                */}
                     <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/checklist.png?raw=true" alt="img" className="d-block img-fluid"></img>               
+=======
+                        <Link to="/quizinfo" className="btn btn-lg fs-1 mt-2 desktop">Start Now</Link>
+                    </div>
+                    <img src="/static/images/checklist.png" alt="img" className="d-block img-fluid"></img>               
+                    {/* <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/checklist.png?raw=true" alt="img" className="d-block img-fluid"></img>                */}
+>>>>>>> upstream/main
                     <Link to="/quizinfo" className="btn btn-lg fs-1 mobile">Start Now</Link>
                  </div>
             </section>
@@ -31,14 +38,20 @@ const Home = () => {
                     <h2 className="p-3">How the Quiz works</h2>
                     <div className="row pt-2">
                         <div className="col-sm-6 col-lg-4 d-flex">
+<<<<<<< HEAD
                             {/* <img src="./src/images/question.png"></img> */}
                             <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/question.png?raw=true" className="d-block"></img>
+=======
+                            <img src="/static/images/question.png" className="d-block"></img>
+                            {/* <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/question.png?raw=true" className="d-block"></img> */}
+>>>>>>> upstream/main
                             <div>
                                 <h4 className="">1. Answer the questions.</h4>
                                 <p >Share your story anonymously by completing a short, simple quiz.</p>
                             </div>
                         </div>
                         <div className="col-sm-6 col-lg-4 d-flex">
+<<<<<<< HEAD
                             {/* <img src="./src/images/result.png"></img> */}
                             <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/result.png?raw=true" className="d-block"></img>
                             <div>
@@ -52,6 +65,21 @@ const Home = () => {
                             <div>
                                 <h4 className="">3. Get Assistance.</h4>
                                 <p className="">Contact the recommended entities using the information provided.</p>
+=======
+                            <img src="/static/images/result.png" className="d-block"></img>
+                            {/* <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/result.png?raw=true" className="d-block"></img> */}
+                            <div>
+                                <h4>2. Get answers.</h4>
+                                <p>The platform analyzes your answers to get a personalized list of resources.</p>
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-lg-4 d-flex">
+                            <img src="/static/images/assistance.png" className="d-block"></img>
+                            {/* <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/assistance.png?raw=true" className="d-block"></img> */}
+                            <div>
+                                <h4>3. Get Assistance.</h4>
+                                <p>Contact the recommended entities using the information provided.</p>
+>>>>>>> upstream/main
                             </div>
                         </div>
                     </div>
@@ -67,8 +95,12 @@ const Home = () => {
                     <h2 className="mb-3">Support AFII Today!</h2>
                     <div className="row">
                         <div className="col-sm-6">
+<<<<<<< HEAD
                             {/* <img src="./src/images/support.png"></img> */}
                             <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/support.png?raw=true"></img>
+=======
+                            <img src="/static/images/support.png"></img>
+>>>>>>> upstream/main
                         </div>
                         <div className="col-sm-6 d-flex flex-column">
                             <p className="mb-3">Help us sustain the platform and share the resources to ensure the newcomers settle smoothly into the new communities.</p>

@@ -7,7 +7,11 @@ import "./home.css";
 
 const Info  = () => {
     const supabaseUrl = 'https://jhuoubjorzswmuenkqvc.supabase.co'
+<<<<<<< HEAD
     const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpodW91Ympvcnpzd211ZW5rcXZjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjAwNTUxNzcsImV4cCI6MjAzNTYzMTE3N30.GJSXRMxFzTD5-5v7ksGPHAphXUX5F2Z0TV5UwajjaI8"
+=======
+    const supabaseKey = import.meta.env.VITE_APIKEY;
+>>>>>>> upstream/main
     const supabase = createClient(supabaseUrl, supabaseKey);
     const [dbData, setDbData] = useState(null);
 
@@ -32,6 +36,7 @@ const Info  = () => {
     }, [organizationName]);
 
     return (
+<<<<<<< HEAD
         <>
             <Nav />
             { dbData ? (
@@ -41,6 +46,17 @@ const Info  = () => {
                 <div className="d-flex justify-content-between flex-wrap align-items-start ms-2">
                     <a href={dbData[0].website} target="_blank" rel="noreferrer" className="d-block">{dbData[0].name}</a>
                     <p className="">{dbData[0].operating_cities[0]} County</p>
+=======
+        <div>
+            <Nav />
+            { dbData ? (
+            <>
+            <section className="d-flex justify-content-sm-between justify-content-lg-around align-items-center info-header">
+                <img src={dbData[0].logo} alt="logo" className="logo" />
+                <div className="d-flex justify-content-center flex-wrap align-items-start ms-2">
+                    <a href={dbData[0].website} target="_blank" rel="noreferrer" className="d-block">{dbData[0].name}</a>
+                    <p className="ms-lg-2 p-lg-1">{dbData[0].operating_cities[0]} County</p>
+>>>>>>> upstream/main
                 </div>
             </section>
             <section className="container row info-body">
@@ -108,7 +124,11 @@ const Info  = () => {
             </>
             ): "Loading..."}
             <Footer />
+<<<<<<< HEAD
         </>
+=======
+        </div>
+>>>>>>> upstream/main
     );
 };
 export default Info;

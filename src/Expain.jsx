@@ -12,16 +12,24 @@ const Explain = () => {
                 <div className="text-center explain">
                     <div className="row">
                         <div className="col-sm-12 col-lg-6 p-4 d-flex align-items-center">
+<<<<<<< HEAD
                             {/* <img src = "./src/images/quiz.png" alt="img" className="img-fluid float-start"/> */}
                             <img src = "https://github.com/Ekene-Azubuko/afii/blob/main/src/images/quiz.png?raw=true" alt="img" className="img-fluid"/>
+=======
+                            <img src = "/static/images/quiz.png" alt="img" className="img-fluid"/>
+>>>>>>> upstream/main
                             <div>
                                 <h3 className="p-2">Interactive Quiz</h3>
                                 <p className="fs-5 mt-4">You answer a series of questions about the help you need, the language you speak, and your origin</p>
                             </div>
                         </div>
                         <div className="col-sm-12 col-lg-6 p-4 d-flex align-items-center explain-special">
+<<<<<<< HEAD
                             {/* <img src="./src/images/recommendation.png" alt="quiz" className="img-fluid float-start"/> */}
                             <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/recommendation.png?raw=true" alt="quiz" className="img-fluid"/>
+=======
+                            <img src="/static/images/recommendation.png" alt="quiz" className="img-fluid"/>
+>>>>>>> upstream/main
                             <div>
                                 <h3 className="p-2">Personalized Recommedations</h3>
                                 <p className="fs-5 mt-3">The platform generates a tailored list of local, federal organizations and relevant programs that meet users’ needs</p>
@@ -35,16 +43,24 @@ const Explain = () => {
                 <div className="text-center explain2">
                     <div className="row">
                         <div className="col-sm-12 col-lg-6 p-4 d-flex align-items-center explain2-special">
+<<<<<<< HEAD
                             {/* <img src = "./src/images/multilingual.png" alt="img" className="img-fluid float-start"/> */}
                             <img src = "https://github.com/Ekene-Azubuko/afii/blob/main/src/images/multilingual.png?raw=true" alt="img" className="img-fluid"/>
+=======
+                            <img src = "/static/images/multilingual.png" alt="img" className="img-fluid"/>
+>>>>>>> upstream/main
                             <div>
                                 <h3 className="p-2">Multilingual Access</h3>
                                 <p className="fs-5 mt-3">The platform is available in multiple languages, making it accessible to non-English-speaking newcomers</p>
                             </div>
                         </div>
                         <div className="col-sm-12 col-lg-6 p-4 d-flex align-items-center">
+<<<<<<< HEAD
                             {/* <img src="./src/images/ease.png" alt="quiz" className="img-fluid float-start"/> */}
                             <img src="https://github.com/Ekene-Azubuko/afii/blob/main/src/images/ease.png?raw=true" alt="quiz" className="img-fluid"/>
+=======
+                            <img src="/static/images/ease.png" alt="quiz" className="img-fluid"/>
+>>>>>>> upstream/main
                             <div>
                                 <h3 className="p-2">Ease of Use</h3>
                                 <p className="fs-5 mt-3">The platform enables immigrants to easily navigate the questions and get personalized results without confusion</p>
